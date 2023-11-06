@@ -1,20 +1,27 @@
+using Microsoft.OpenApi.Models;
+using ReadingPT.WebSiteApi.Utility.SwaggerExt;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+#region Swagger的配置
 
-var app = builder.Build();
+builder.Services.AddSwaggerConfig();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+#endregion
+
+
+WebApplication app = builder.Build();
+
+#region
+//使用Swagger的配置
+app.UseSwaggerConfig();
+
+#endregion
 
 app.UseHttpsRedirection();
 

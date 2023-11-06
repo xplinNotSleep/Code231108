@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\技术学习内容\\前后端分离\\webAPI\\zhaoxi_readingplatform\\ReadingPT.WebSiteApi\\ReadingPT.WebSiteApi.csproj": {}
+    "F:\\技术学习内容\\前后端分离\\webAPI\\zhaoxi_readingplatform\\ReadingPT.Models\\ReadingPT.Models.csproj": {}
   },
   "projects": {
-    "F:\\技术学习内容\\前后端分离\\webAPI\\zhaoxi_readingplatform\\ReadingPT.WebSiteApi\\ReadingPT.WebSiteApi.csproj": {
+    "F:\\技术学习内容\\前后端分离\\webAPI\\zhaoxi_readingplatform\\ReadingPT.Models\\ReadingPT.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\技术学习内容\\前后端分离\\webAPI\\zhaoxi_readingplatform\\ReadingPT.WebSiteApi\\ReadingPT.WebSiteApi.csproj",
-        "projectName": "ReadingPT.WebSiteApi",
-        "projectPath": "F:\\技术学习内容\\前后端分离\\webAPI\\zhaoxi_readingplatform\\ReadingPT.WebSiteApi\\ReadingPT.WebSiteApi.csproj",
+        "projectUniqueName": "F:\\技术学习内容\\前后端分离\\webAPI\\zhaoxi_readingplatform\\ReadingPT.Models\\ReadingPT.Models.csproj",
+        "projectName": "ReadingPT.Models",
+        "projectPath": "F:\\技术学习内容\\前后端分离\\webAPI\\zhaoxi_readingplatform\\ReadingPT.Models\\ReadingPT.Models.csproj",
         "packagesPath": "C:\\Users\\86157\\.nuget\\packages\\",
-        "outputPath": "F:\\技术学习内容\\前后端分离\\webAPI\\zhaoxi_readingplatform\\ReadingPT.WebSiteApi\\obj\\",
+        "outputPath": "F:\\技术学习内容\\前后端分离\\webAPI\\zhaoxi_readingplatform\\ReadingPT.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,12 +43,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.5.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -61,9 +55,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
