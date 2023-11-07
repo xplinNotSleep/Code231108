@@ -1,0 +1,11 @@
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.BusinessService\bin\Debug\net6.0\ReadingPT.BusinessService.deps.json
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.BusinessService\bin\Debug\net6.0\ReadingPT.BusinessService.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.BusinessService\bin\Debug\net6.0\ReadingPT.BusinessService.pdb
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.BusinessService\obj\Debug\net6.0\ReadingPT.BusinessService.GeneratedMSBuildEditorConfig.editorconfig
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.BusinessService\obj\Debug\net6.0\ReadingPT.BusinessService.AssemblyInfoInputs.cache
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.BusinessService\obj\Debug\net6.0\ReadingPT.BusinessService.AssemblyInfo.cs
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.BusinessService\obj\Debug\net6.0\ReadingPT.BusinessService.csproj.CoreCompileInputs.cache
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.BusinessService\obj\Debug\net6.0\ReadingPT.BusinessService.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.BusinessService\obj\Debug\net6.0\refint\ReadingPT.BusinessService.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.BusinessService\obj\Debug\net6.0\ReadingPT.BusinessService.pdb
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.BusinessService\obj\Debug\net6.0\ref\ReadingPT.BusinessService.dll

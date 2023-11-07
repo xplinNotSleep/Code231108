@@ -1,0 +1,12 @@
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.Models\bin\Debug\net6.0\ReadingPT.Models.deps.json
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.Models\bin\Debug\net6.0\ReadingPT.Models.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.Models\bin\Debug\net6.0\ReadingPT.Models.pdb
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.Models\obj\Debug\net6.0\ReadingPT.Models.csproj.AssemblyReference.cache
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.Models\obj\Debug\net6.0\ReadingPT.Models.GeneratedMSBuildEditorConfig.editorconfig
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.Models\obj\Debug\net6.0\ReadingPT.Models.AssemblyInfoInputs.cache
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.Models\obj\Debug\net6.0\ReadingPT.Models.AssemblyInfo.cs
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.Models\obj\Debug\net6.0\ReadingPT.Models.csproj.CoreCompileInputs.cache
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.Models\obj\Debug\net6.0\ReadingPT.Models.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.Models\obj\Debug\net6.0\refint\ReadingPT.Models.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.Models\obj\Debug\net6.0\ReadingPT.Models.pdb
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.Models\obj\Debug\net6.0\ref\ReadingPT.Models.dll

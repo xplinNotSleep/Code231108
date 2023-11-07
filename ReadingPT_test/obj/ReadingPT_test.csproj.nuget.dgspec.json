@@ -1,0 +1,204 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT_test\\ReadingPT_test.csproj": {}
+  },
+  "projects": {
+    "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj",
+        "projectName": "ReadingPT.DataAccess",
+        "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://172.18.80.203:8000/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj": {
+                "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj",
+        "projectName": "ReadingPT.Models",
+        "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://172.18.80.203:8000/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT_test\\ReadingPT_test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT_test\\ReadingPT_test.csproj",
+        "projectName": "ReadingPT_test",
+        "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT_test\\ReadingPT_test.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT_test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "http://172.18.80.203:8000/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj": {
+                "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj"
+              },
+              "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj": {
+                "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

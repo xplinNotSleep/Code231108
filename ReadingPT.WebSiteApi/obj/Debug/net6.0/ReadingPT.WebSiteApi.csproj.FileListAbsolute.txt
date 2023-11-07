@@ -64,3 +64,16 @@ F:\技术学习内容\前后端分离\webAPI\zhaoxi_readingplatform\ReadingPT.We
 F:\技术学习内容\前后端分离\webAPI\zhaoxi_readingplatform\ReadingPT.WebSiteApi\obj\Debug\net6.0\ReadingPT.WebSiteApi.pdb
 F:\技术学习内容\前后端分离\webAPI\zhaoxi_readingplatform\ReadingPT.WebSiteApi\obj\Debug\net6.0\ReadingPT.WebSiteApi.genruntimeconfig.cache
 F:\技术学习内容\前后端分离\webAPI\zhaoxi_readingplatform\ReadingPT.WebSiteApi\obj\Debug\net6.0\ref\ReadingPT.WebSiteApi.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\bin\Debug\net6.0\ReadingPT.WebSiteApi.xml
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\bin\Debug\net6.0\Npgsql.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\bin\Debug\net6.0\ReadingPT.DataAccess.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\bin\Debug\net6.0\ReadingPT.Models.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\bin\Debug\net6.0\ReadingPT.DataAccess.pdb
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\bin\Debug\net6.0\ReadingPT.Models.pdb
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\obj\Debug\net6.0\ReadingPT.WebSiteApi.xml
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\bin\Debug\net6.0\ReadingPT.BusinessService.dll
+F:\CodeDataCheck\ReadingPT1106.Website\ReadingPT.WebSiteApi\bin\Debug\net6.0\ReadingPT.BusinessService.pdb
