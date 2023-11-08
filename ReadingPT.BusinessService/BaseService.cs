@@ -169,7 +169,7 @@ namespace ReadingPT.BusinessService
         /// <returns></returns>
         public IQueryable<T> ExcuteQuery<T>(string sql) where T : class
         {
-
+            return null;
         }
 
         /// <summary>

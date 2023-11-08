@@ -8,13 +8,6 @@ namespace ReadingPT.BusinessService.Interface
 {
     public interface IBookService
     {
-        public void Add();
-
-        public void Update();
-
-        public void Query();
-
-        public void Delete();
 
     }
 }

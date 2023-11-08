@@ -1,34 +1,27 @@
 {
   "version": 2,
-  "dgSpecHash": "9V2ordKdRQEUYJx+QbCi8NaJUEF6PES/18wTmxBHKn10UyoG7wNupRt8OnC/iFJeOD99Qu4SeyplkagD4KLG+A==",
+  "dgSpecHash": "z9qLNhynXxc9Y1ugtCBhAvJMt1p1GM2jbmwgOKQPgRJJitxGz924+MeLMt4cY2x6Ad3NLSCSTb+WriOxg3/cFg==",
   "success": true,
-  "projectFilePath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj",
+  "projectFilePath": "F:\\技术学习内容\\前后端分离\\webAPI\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.0\\microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.0\\microsoft.entityframeworkcore.relational.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.0\\microsoft.extensions.caching.memory.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\npgsql\\6.0.0\\npgsql.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.0\\npgsql.entityframeworkcore.postgresql.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.0\\microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.0\\microsoft.entityframeworkcore.relational.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.0\\microsoft.extensions.caching.memory.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\npgsql\\6.0.0\\npgsql.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.0\\npgsql.entityframeworkcore.postgresql.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\86157\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1803",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "正在通过 “HTTP” 源“http://172.18.80.203:8000/nuget”运行“restore”操作。将来的版本中将删除非 HTTPS 访问权限。请考虑迁移到 “HTTPS” 源。"
-    }
-  ]
+  "logs": []
 }
