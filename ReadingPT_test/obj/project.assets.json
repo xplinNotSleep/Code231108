@@ -755,11 +755,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT_test\\ReadingPT_test.csproj",
+      "projectUniqueName": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT_test\\ReadingPT_test.csproj",
       "projectName": "ReadingPT_test",
-      "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT_test\\ReadingPT_test.csproj",
+      "projectPath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT_test\\ReadingPT_test.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT_test\\obj\\",
+      "outputPath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT_test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -776,11 +776,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj": {
-              "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj"
+            "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj": {
+              "projectPath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj"
             },
-            "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj": {
-              "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj"
+            "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj": {
+              "projectPath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj"
             }
           }
         }

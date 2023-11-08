@@ -1203,11 +1203,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.WebSiteApi\\ReadingPT.WebSiteApi.csproj",
+      "projectUniqueName": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.WebSiteApi\\ReadingPT.WebSiteApi.csproj",
       "projectName": "ReadingPT.WebSiteApi",
-      "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.WebSiteApi\\ReadingPT.WebSiteApi.csproj",
+      "projectPath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.WebSiteApi\\ReadingPT.WebSiteApi.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.WebSiteApi\\obj\\",
+      "outputPath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.WebSiteApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1224,14 +1224,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.BusinessService\\ReadingPT.BusinessService.csproj": {
-              "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.BusinessService\\ReadingPT.BusinessService.csproj"
+            "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.BusinessService\\ReadingPT.BusinessService.csproj": {
+              "projectPath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.BusinessService\\ReadingPT.BusinessService.csproj"
             },
-            "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj": {
-              "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj"
+            "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj": {
+              "projectPath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.DataAccess\\ReadingPT.DataAccess.csproj"
             },
-            "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj": {
-              "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj"
+            "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj": {
+              "projectPath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj"
             }
           }
         }

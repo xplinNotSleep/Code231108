@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qiINeVf2USVo+sjlS9F7TTruevdAh/kCTqbiHGjKQMJ9VUPN4drCYczAovwaam19p7xtsP3qHgRCTasdHRvnhQ==",
+  "dgSpecHash": "haWkdesj1egxbOgCM08Lf0psILm5gd2MXZ49zVInJGqSbq1dRxhLq9q/jhIUxtlR+rPNS4L9GUbZq2wvMeeG/g==",
   "success": true,
-  "projectFilePath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.BusinessService\\ReadingPT.BusinessService.csproj",
+  "projectFilePath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.BusinessService\\ReadingPT.BusinessService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",

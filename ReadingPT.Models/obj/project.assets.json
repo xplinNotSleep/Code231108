@@ -716,11 +716,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj",
+      "projectUniqueName": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj",
       "projectName": "ReadingPT.Models",
-      "projectPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj",
+      "projectPath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.Models\\ReadingPT.Models.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "F:\\CodeDataCheck\\ReadingPT1106.Website\\ReadingPT.Models\\obj\\",
+      "outputPath": "F:\\CodeDataCheck\\PerNetCoreWeb\\ReadingPT1106.Website\\ReadingPT.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
