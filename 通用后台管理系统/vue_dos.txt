@@ -5,3 +5,9 @@ npm config set prefix +nodejs安装的路径
 npm install -g @vue/cli
 
 vue create +要创建的vue项目名
+
+npm install -g pnpm
+
+npm install sass --save
+
+npm install vue-router@3.5.1
