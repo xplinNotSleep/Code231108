@@ -1,0 +1,7 @@
+npm config set registry http://registry.npm.taobao.org
+
+npm config set prefix +nodejs安装的路径
+
+npm install -g @vue/cli
+
+vue create +要创建的vue项目名
