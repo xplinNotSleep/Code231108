@@ -1,17 +1,18 @@
 <!--登录界面代码-->
 <template>
     <div class='login'>
-        
+       dfjiwfe
     </div>
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
 
-export default defineComponent({
-    setup() {
+
+export default ({
+    data() {
         
     },
 })
 </script>
+
 
