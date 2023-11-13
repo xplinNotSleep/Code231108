@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import LoginPage from '../view/index/LoginPage.vue'
+import mainPage from '../view/mainPage.vue'
 
 Vue.use(VueRouter)
 
@@ -10,14 +10,14 @@ export default new VueRouter({
 mode:'history',
 routes:[
     {
-        path: '/login',
-        name:'login',
+        path: '/main',
+        name:'main',
         //component: () => import('../view/index/LoginPage.vue'),
-        component: LoginPage
+        component: mainPage
     },
     {
         path: '/',
-        redirect:'/login',
+        redirect:'/main',
     
     }
 ]
