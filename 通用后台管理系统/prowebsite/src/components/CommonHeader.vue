@@ -2,7 +2,8 @@
 <template>
     <div class="headerContainer">
         <div class="leftContent">
-            <el-button icon="el-icon-menu" size="mini">
+            <!--点击控制左侧菜单栏-->
+            <el-button @click="handleMenu" icon="el-icon-menu" size="mini">
             </el-button>
             <!--面包屑-->
             <span class="divTxt">首页</span>
@@ -18,13 +19,8 @@
                 <el-dropdown-menu slot="dropdown">
                     <el-dropdown-item>个人中心</el-dropdown-item>
                     <el-dropdown-item>退出</el-dropdown-item>
-
                 </el-dropdown-menu>
-
             </el-dropdown>
-
-
-
         </div>
     </div>
 
@@ -34,6 +30,13 @@
 export default {
     data() {
        return {} 
+    },
+    methods:
+    {
+        //提交按钮控制信息，传到store并影响左侧菜单栏状态
+        handleMenu(){
+            this.$store.commit('collapseMenu')
+        }
     }
 }
 </script>
