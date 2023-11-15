@@ -11,3 +11,5 @@ npm install -g pnpm
 npm install sass --save
 
 npm install vue-router@3.5.1
+
+npm install less less-loader@5.0.0

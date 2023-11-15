@@ -10,14 +10,14 @@ export default new VueRouter({
 mode:'history',
 routes:[
     {
-        path: '/main',
+        path: '/mainPage',
         name:'main',
         //component: () => import('../view/index/LoginPage.vue'),
         component: mainPage
     },
     {
         path: '/',
-        redirect:'/main',
+        redirect:'/mainPage',
     
     }
 ]

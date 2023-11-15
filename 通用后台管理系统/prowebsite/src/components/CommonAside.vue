@@ -1,15 +1,13 @@
 <!--页面左侧菜单栏-->
 <template> 
-    <h3>通用后台管理系统</h3>
-    <!--<el-menu default-active="1-4-1" class="el-menu-vertical-demo" 
-    @open="handleOpen" @close="handleClose" :collapse="isCollapse"
-    background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
     
-    <el-menu>-->
-        
-      
-      <!--左侧菜单制作
-      <el-menu-item v-for="item in noChildNode" :key="item.name" :index="item.name">
+    <el-menu default-active="1-4-1" class="el-menu-vertical-demo" 
+    @open="handleOpen" @close="handleClose" :collapse="isCollapse"
+    background-color="#545c64" text-color="#fff" 
+    active-text-color="#ffd04b">
+      <h3>通用后台管理系统</h3>
+      <!--左侧菜单制作-->
+      <el-menu-item @click="clickMenu(item)" v-for="item in noChildNode" :key="item.name" :index="item.name">
           <i :class="`el-icon-${item.icon}`"></i>
           <span slot="title">{{item.label}}</span>
       </el-menu-item>
@@ -19,13 +17,14 @@
               <span slot="title">{{ item.label }}</span>
           </template>
           <el-menu-item-group v-for="subItem in item.children" :key="subItem.path">
-              <el-menu-item index="1-1">{{subItem.label}}</el-menu-item>
+              <el-menu-item @click="clickMenu(subItem)" :index="subItem.name">
+                {{subItem.label}}</el-menu-item>
           </el-menu-item-group>
       </el-submenu>
-    </el-menu>-->
+    </el-menu>
 </template>
 
-<!--
+
 <style lang="less"> 
     .el-menu-vertical-demo:not(.el-menu--collapse) {
         width:200px;
@@ -34,18 +33,19 @@
     .el-menu {
       height: 100vh;
       h3 {
-        color:rgb(165, 21, 21);
+        color:rgb(232, 224, 224);
+        text-align: center;
       }
     }
 
-</style>-->
+</style>
 
 <script>
   export default {
     data() {
       return {
         isCollapse: false,//是否水平折叠
-        //数组
+        //数组,用于显示菜单下具体内容
         menuData: [
         {
           path: '/',
@@ -96,6 +96,17 @@
       },
       handleClose(key, keyPath) {
         console.log(key, keyPath);
+      },
+      //引入路由，点击菜单某项跳转到特定的页面
+      clickMenu(item)
+      {
+        //当页面的路由与跳转的路由不一致时才允许跳转,否则报错
+        if(this.$route.path !== item.path &&
+         !(this.$route.path === '/home' && (item.path === '/') ))
+        {
+          this.$router.push(item.path)
+        }
+        
       }
     },
     //计算属性
