@@ -4,7 +4,7 @@
     <!--有嵌套路由的还需要在这里添加-->
     
     <el-container>
-        <el-aside width="200px">
+        <el-aside width="auto">
             <Aside0 />
         </el-aside>
         <el-container>

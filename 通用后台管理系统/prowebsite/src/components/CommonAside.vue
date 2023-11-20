@@ -1,11 +1,14 @@
 <!--页面左侧菜单栏-->
-<template> 
-    
-    <el-menu default-active="1-4-1" class="el-menu-vertical-demo" 
-    @open="handleOpen" @close="handleClose" :collapse="isCollapse"
-    background-color="#545c64" text-color="#fff" 
-    active-text-color="#ffd04b">
-      <h3>通用后台管理系统</h3>
+<template>  
+    <el-menu 
+      default-active="1-4-1" 
+      class="el-menu-vertical-demo" 
+      :collapse="isCollapse"
+      background-color="#545c64" 
+      text-color="#fff" 
+      active-text-color="#ffd04b"
+    >
+      <h3>{{ isCollapse ?'后台':'通用后台管理系统'}}</h3><!--根据是否展开状态显示不同内容-->
       <!--左侧菜单制作-->
       <el-menu-item @click="clickMenu(item)" v-for="item in noChildNode" :key="item.name" :index="item.name">
           <i :class="`el-icon-${item.icon}`"></i>
@@ -25,18 +28,24 @@
 </template>
 
 
-<style lang="less"> 
-    .el-menu-vertical-demo:not(.el-menu--collapse) {
-        width:200px;
-        min-height: 400px;
+<style lang="less" scoped> 
+     
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+    width:200px;
+    min-height: 400px;
+    h3 {
+      color:rgb(232, 224, 224);
+      text-align: center;
     }
-    .el-menu {
-      height: 100vh;
-      h3 {
-        color:rgb(232, 224, 224);
-        text-align: center;
-      }
+}
+.el-menu-vertical-demo{
+    border-right: none;
+    height: 100vh;
+    h3{
+      text-align: center;
     }
+
+}
 
 </style>
 
@@ -44,7 +53,7 @@
   export default {
     data() {
       return {
-        isCollapse: false,//是否水平折叠
+        //isCollapse: false,//是否水平折叠
         //数组,用于显示菜单下具体内容
         menuData: [
         {
@@ -91,12 +100,6 @@
       };
     },
     methods: {
-      handleOpen(key, keyPath) {
-        console.log(key, keyPath);
-      },
-      handleClose(key, keyPath) {
-        console.log(key, keyPath);
-      },
       //引入路由，点击菜单某项跳转到特定的页面
       clickMenu(item)
       {
@@ -121,6 +124,10 @@
       {
         //查询子菜单下的内容
         return this.menuData.filter(item => item.children)
+      },
+      //组件间通信进行控制
+      isCollapse(){
+        return this.$store.state.tab.isCollapse
       }
 
     }
