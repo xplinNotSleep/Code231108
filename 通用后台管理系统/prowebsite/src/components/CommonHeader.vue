@@ -5,8 +5,13 @@
             <!--点击控制左侧菜单栏-->
             <el-button @click="handleMenu" icon="el-icon-menu" size="mini">
             </el-button>
-            <!--面包屑-->
-            <span class="divTxt">首页</span>
+            <!--面包屑(板块切换)-->
+            <el-breadcrumb separator="/">
+                <!--将左侧菜单栏的内容传递到面包屑列表项中-->
+                <el-breadcrumb-item  v-for="item in tags" :key="item.path" :to="{path:item.path}">
+                    {{item.label}}
+                </el-breadcrumb-item>
+            </el-breadcrumb>
         </div>
         <div class="rightContent">
             <el-dropdown>
@@ -27,6 +32,8 @@
 </template>
 
 <script>
+
+import { mapState } from 'vuex';
 export default {
     data() {
        return {} 
@@ -37,6 +44,15 @@ export default {
         handleMenu(){
             this.$store.commit('collapseMenu')
         }
+    },
+    computed:{
+        //扩展运算符
+        ...mapState({
+            tags:state=>state.tab.tabsList
+        })
+    },
+    mounted(){
+        console.log(this.tags, 'tags')
     }
 }
 </script>
