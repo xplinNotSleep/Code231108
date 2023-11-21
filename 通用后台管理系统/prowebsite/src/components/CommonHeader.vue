@@ -3,7 +3,7 @@
     <div class="headerContainer">
         <div class="leftContent">
             <!--点击控制左侧菜单栏-->
-            <el-button @click="handleMenu" icon="el-icon-menu" size="mini">
+            <el-button style="margin-right: 10px;" @click="handleMenu" icon="el-icon-menu" size="mini">
             </el-button>
             <!--面包屑(板块切换)-->
             <el-breadcrumb separator="/">
@@ -78,6 +78,28 @@ export default {
             height: 30px;
             border-radius: 80%;
         }
+    }
+
+    .leftContent {
+        display: flex;
+        align-items: center;
+
+        
+        //面包屑样式设置
+        /deep/.el-breadcrumb__item {
+            .el-breadcrumb__inner {
+                font-weight: normal;
+                &.is-link {
+                    color: #666
+                }
+            }
+            &:last-child {
+                .el-breadcrumb__inner {
+                    color: #fff
+                }
+            }
+        }
+
     }
 }
 
