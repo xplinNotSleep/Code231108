@@ -1,50 +1,40 @@
-<!--系统主界面-->
-<template>   
-<div>
-    <!--有嵌套路由的还需要在这里添加-->
-    
-    <el-container>
-        <el-aside width="auto">
-            <Aside0 />
-        </el-aside>
+<template>
+    <div>
         <el-container>
-            <el-header>
-                <Header0 />
-            </el-header>
-            <el-main>
-                <router-view></router-view>
-            </el-main>
-            
+            <el-aside width="auto">
+                <common-aside />
+            </el-aside>
+            <el-container>
+                <el-header>
+                    <common-header />
+                </el-header>
+                <common-tag />
+                <el-main>
+                    <!-- 路由出口 -->
+                    <!-- 路由匹配到的组件将渲染在这里 -->
+                    <router-view></router-view>
+                </el-main>
+            </el-container>
         </el-container>
-    </el-container>
-</div>
-   
-    
+    </div>
 </template>
-
 <script>
-
-import Aside0 from '../components/CommonAside.vue'
-import Header0 from '../components/CommonHeader.vue'
-
+import CommonAside from '../components/CommonAside.vue'
+import CommonHeader from '../components/CommonHeader.vue'
+import CommonTag from '../components/CommonTag.vue'
 export default {
     data() {
-       return {} 
+        return {}
     },
-    
-    components:{
-        Aside0,
-        Header0
+    components: {
+        CommonAside,
+        CommonHeader,
+        CommonTag
     }
 }
-
 </script>
-
-<style lang="less" scoped>
-    .el-header{
-        padding:0
-    }
-
-
+<style scoped>
+.el-header {
+    padding: 0
+}
 </style>
-        
