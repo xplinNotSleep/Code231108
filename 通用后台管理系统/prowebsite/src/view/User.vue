@@ -239,7 +239,7 @@ export default {
         //测试
         getUser().then(({data}) => {
             console.log(data)
-            this.tableData.data.list
+            this.tableData=data.list
         })
 
     }
