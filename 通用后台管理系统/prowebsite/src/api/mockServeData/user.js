@@ -1,3 +1,4 @@
+//主界面用户管理信息的初始化以及增删改
 import Mock from 'mockjs'
 
 // get请求从config.url获取参数，post从config.body中获取参数

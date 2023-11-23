@@ -11,6 +11,7 @@ export const getUser =(params) => {
 }
 
 export const addUser = (data) => {
+    console.log('准备提交1')
     return http.post('/user/add', data)
 }
 
@@ -20,4 +21,8 @@ export const editUser = (data) => {
 
 export const delUser = (data) => {
     return http.post('/user/del', data)
+}
+
+export const getMenu = (data) => {
+    return http.post('/permission/getMenu', data)
 }

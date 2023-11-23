@@ -14,7 +14,7 @@
             </el-breadcrumb>
         </div>
         <div class="rightContent">
-            <el-dropdown>
+            <el-dropdown @command="handleClick">
                 <!--点击内容-->
                 <span class="el-dropdown-link">
                     <!--下拉菜单<i class="el-icon-arrow-down 
@@ -23,7 +23,8 @@
                 </span>
                 <el-dropdown-menu slot="dropdown">
                     <el-dropdown-item>个人中心</el-dropdown-item>
-                    <el-dropdown-item>退出</el-dropdown-item>
+                    <el-dropdown-item command="cancel">退出</el-dropdown-item>
+                    <!--<el-dropdown-item @click="logout">退出</el-dropdown-item>-->
                 </el-dropdown-menu>
             </el-dropdown>
         </div>
@@ -34,6 +35,8 @@
 <script>
 
 import { mapState } from 'vuex';
+import Cookie from 'js-cookie'
+
 export default {
     data() {
        return {} 
@@ -43,6 +46,17 @@ export default {
         //提交按钮控制信息，传到store并影响左侧菜单栏状态
         handleMenu(){
             this.$store.commit('collapseMenu')
+        },
+        handleClick(command){
+            if (command === 'cancel') {
+                console.log('登出')
+                // 清除cookie中的token
+                Cookie.remove('token')
+                // 清除cookie中的menu
+                //Cookie.remove('menu')
+                // 跳转到登录页
+                this.$router.push('/login')
+            }
         }
     },
     computed:{

@@ -50,11 +50,14 @@
 </style>
 
 <script>
-  export default {
+
+import Cookie from 'js-cookie'
+export default {
     data() {
       return {
         //isCollapse: false,//是否水平折叠
         //数组,用于显示菜单下具体内容
+        /*
         menuData: [
         {
           path: '/',
@@ -96,7 +99,7 @@
               url: 'Other/PageTwo'
             }
           ]
-        }]
+        }]*/
       };
     },
     methods: {
@@ -128,6 +131,11 @@
       //组件间通信进行控制
       isCollapse(){
         return this.$store.state.tab.isCollapse
+      },
+      //菜单
+      menuData() {
+        //判断当前数据，如果缓存中没有，就从当前的store中去获取
+        return JSON.parse(Cookie.get('menu')) || this.$store.state.tab.menu
       }
 
     }

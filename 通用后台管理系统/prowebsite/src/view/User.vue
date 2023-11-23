@@ -27,7 +27,7 @@
                         v-model="form.birth"
                         type="date"
                         placeholder="选择日期"
-                        value-format="yyyy-MM-DD">
+                        value-format="yyyy-MM-dd">
                     </el-date-picker>
                 </el-form-item>
                 <el-form-item label="地址" prop="addr">
@@ -38,7 +38,7 @@
             <!--按钮-->
             <span slot="footer" class="dialog-footer">
                 <el-button @click="cancel">取 消</el-button>
-                <el-button type="primary" >确 定</el-button>
+                <el-button type="primary" @click="submit">确 定</el-button>
             </span>
         </el-dialog>
         <!--用户管理界面的顶部-->
@@ -48,12 +48,14 @@
                 + 新增
             </el-button>
             <!-- 右侧form搜索区域 -->
-            <el-form :inline="true" :model="userForm">
+            <el-form :inline="true" :model="searchForm">
                 <el-form-item>
-                    <el-input placeholder="请输入名称"></el-input>
+                    <el-input 
+                    placeholder="请输入名称"
+                    v-model="searchForm.name"></el-input>
                 </el-form-item>
                 <el-form-item>
-                    <el-button type="primary">查询</el-button>
+                    <el-button type="primary" @click="onSubmit">查询</el-button>
                 </el-form-item>
             </el-form>
 
@@ -61,7 +63,7 @@
         <!--用户管理信息显示模块-->
         <div class="usersTable">
             <!--显示表格-->
-            <el-table height="90%" :data="tableData" style="width:100%">
+            <el-table stripe height="90%" :data="tableData" style="width:100%">
                 <el-table-column prop="name" label="姓名">
                 </el-table-column>
                 <el-table-column prop="sex" label="性别">
@@ -82,12 +84,13 @@
                     </template>
                 </el-table-column>
             </el-table>
-            <!--分页栏
+            
             <div class="page0">
-                <el-pagination layout="prev,paper,next"
-                :total="total" @current-change="handlePage">
+                <el-pagination 
+                    :total="total"
+                    @current-change="handlePage">
                 </el-pagination>
-            </div>-->
+            </div>
         </div>
     </div>
     
@@ -134,7 +137,7 @@ export default {
                 page: 1,
                 limit: 10
             },
-            userForm: {
+            searchForm: {
                 name: ''
             }
 
@@ -152,6 +155,7 @@ export default {
         },
         //弹出对话框
         handleShow() {
+            console.log('加载新增界面')
             this.modalType = 0
             this.dialogVisible = true
         },
@@ -162,6 +166,7 @@ export default {
                 if (valid) {
                     // 后续对表单数据的处理
                     if (this.modalType === 0) {
+                        console.log('准备提交')
                         addUser(this.form).then(() => {
                             // 重新获取列表的接口
                             this.getList()
@@ -172,11 +177,16 @@ export default {
                             this.getList()
                         })
                     }
+                    console.log(this.form,'formJJJJ')
 
                     // 清空表单的数据
                     this.$refs.form.resetFields()
                     // 关闭弹窗
                     this.dialogVisible = false
+                }
+                else
+                {
+                    console('不符合要求')
                 }
             })
         },
@@ -213,17 +223,22 @@ export default {
         // 获取列表的数据
         getList() 
         {
-            // 获取的列表的数据
+            /* 获取的列表的数据
             getUser({params: {...this.userForm, ...this.pageData}}).then(({ data }) => {
                 console.log(data)
                 this.tableData = data.list
 
                 this.total = data.count || 0
-            })
+            })*/
+            getUser({params:{...this.searchForm, ...this.pageData}}).then(({data}) => {
+            this.tableData=data.list
+            this.total = data.count || 0
+            //this.total = data.count?data.count:0
+        })
+
         },
         // 选择页码的回调函数
-        handlePage(val) {
-            // console.log(val, 'val')
+        handlePage(val) { 
             this.pageData.page = val
             this.getList()
         },
@@ -235,12 +250,12 @@ export default {
     },
     //加载时立刻显示
     mounted(){
-        //this.getList()
-        //测试
+        this.getList()
+        /*测试
         getUser().then(({data}) => {
             console.log(data)
             this.tableData=data.list
-        })
+        })*/
 
     }
 }
