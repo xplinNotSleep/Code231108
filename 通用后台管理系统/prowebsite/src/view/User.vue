@@ -41,20 +41,62 @@
                 <el-button type="primary" >确 定</el-button>
             </span>
         </el-dialog>
-        <div class="manage-header">
-            <el-button @click="handleAdd" type="primary">
+        <!--用户管理界面的顶部-->
+        <div class="manageHeader">
+            <!--左侧新增按钮-->
+            <el-button @click="handleShow" type="primary">
                 + 新增
             </el-button>
+            <!-- 右侧form搜索区域 -->
+            <el-form :inline="true" :model="userForm">
+                <el-form-item>
+                    <el-input placeholder="请输入名称"></el-input>
+                </el-form-item>
+                <el-form-item>
+                    <el-button type="primary">查询</el-button>
+                </el-form-item>
+            </el-form>
+
         </div>
-
-
+        <!--用户管理信息显示模块-->
+        <div class="usersTable">
+            <!--显示表格-->
+            <el-table height="90%" :data="tableData" style="width:100%">
+                <el-table-column prop="name" label="姓名">
+                </el-table-column>
+                <el-table-column prop="sex" label="性别">
+                    <template slot-scope="scope">
+                        <span>{{ scope.row.sex == 1 ? '男' : '女' }}</span>
+                    </template>
+                </el-table-column>
+                <el-table-column prop="age" label="年龄">
+                </el-table-column>
+                <el-table-column prop="birth" label="出生日期">
+                </el-table-column>
+                <el-table-column prop="addr" label="地址">
+                </el-table-column>
+                <el-table-column prop="operate" label="操作">
+                    <template slot-scope="scope">
+                        <el-button size="mini" @click="handleEdit(scope.row)">编辑</el-button>
+                        <el-button type="danger" size="mini" @click="handleDelete(scope.row)">删除</el-button>
+                    </template>
+                </el-table-column>
+            </el-table>
+            <!--分页栏
+            <div class="page0">
+                <el-pagination layout="prev,paper,next"
+                :total="total" @current-change="handlePage">
+                </el-pagination>
+            </div>-->
+        </div>
     </div>
     
     
 </template>
 
 <script>
-
+//从api中引入用户管理的接口
+import {getUser, addUser, editUser, delUser} from '../api'
 export default {
     data() {
        return {
@@ -85,6 +127,16 @@ export default {
                     { required: true, message: '请输入地址' }
                 ]
             },
+            tableData:[],
+            modalType: 0, // 0表示新增的弹窗， 1表示编辑
+            total: 0, //当前的总条数
+            pageData: {
+                page: 1,
+                limit: 10
+            },
+            userForm: {
+                name: ''
+            }
 
        } 
     },
@@ -99,11 +151,11 @@ export default {
             this.handleClose()
         },
         //弹出对话框
-        handleAdd() {
+        handleShow() {
             this.modalType = 0
             this.dialogVisible = true
         },
-        // 提交用户表单
+        // 提交新增的用户表单信息
         submit() {
             //判断填入的是否符合要求
             this.$refs.form.validate((valid) => {
@@ -127,8 +179,91 @@ export default {
                     this.dialogVisible = false
                 }
             })
+        },
+        //编辑信息
+        handleEdit(row){
+            this.modalType=1
+            this.dialogVisible=true
+            //拷贝点击编辑所在的当前行的信息
+            this.form=JSON.parse(JSON.stringify(row))
+        },
+        //删除信息
+        handleDelete(row) {
+            this.$confirm('此操作将永久删除该记录信息, 是否继续?', '提示', {
+                confirmButtonText: '确定',
+                cancelButtonText: '取消',
+                type: 'warning'
+                }).then(() => {
+                    delUser({ id: row.id }).then(() => {
+                        this.$message({
+                            type: 'success',
+                            message: '删除成功!'
+                        });
+                        // 重新获取列表的接口
+                        this.getList()
+                    })
+                    
+                }).catch(() => {
+                    this.$message({
+                        type: 'info',
+                        message: '已取消删除'
+                    });          
+            });
+        },
+        // 获取列表的数据
+        getList() 
+        {
+            // 获取的列表的数据
+            getUser({params: {...this.userForm, ...this.pageData}}).then(({ data }) => {
+                console.log(data)
+                this.tableData = data.list
+
+                this.total = data.count || 0
+            })
+        },
+        // 选择页码的回调函数
+        handlePage(val) {
+            // console.log(val, 'val')
+            this.pageData.page = val
+            this.getList()
+        },
+        // 点击进行列表的查询
+        onSubmit() {
+            this.getList()
         }
+
+    },
+    //加载时立刻显示
+    mounted(){
+        //this.getList()
+        //测试
+        getUser().then(({data}) => {
+            console.log(data)
+            this.tableData=data.list
+        })
 
     }
 }
 </script>
+
+<style lang="less" scoped>
+.userManage {
+    height: 90%;
+    .manageHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .usersTable {
+        position: relative;
+        height: calc(100% - 62px);
+        .page0 {
+            position: absolute;
+            bottom: 0;
+            right: 20px;
+        }
+    }
+}
+
+
+</style>
